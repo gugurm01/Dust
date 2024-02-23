@@ -1,2 +1,2 @@
 # Dust
-Jogo hypercasual para Android, feito na Unity
+Jogo hypercasual para Android, feito na Unity.
