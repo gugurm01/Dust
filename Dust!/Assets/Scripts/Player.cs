@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    public Rigidbody2D body;
+    public float speed;
+    float horizontal;
+    float vertical;
     void Start()
     {
         
@@ -13,11 +17,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            print("coco");
-        }
+        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
+        body.velocity = new Vector2(speed * horizontal, speed * vertical);
     }
 
 
+
+    
 }
