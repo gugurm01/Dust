@@ -5,15 +5,19 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private int vidas;
+    [SerializeField] float speed;
+    private Transform target;
     // Start is called before the first frame update
     void Start()
     {
-        
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
+        FollowPlayer();
+
         if(vidas == 0)
         {
             Destroy(gameObject);
@@ -32,5 +36,10 @@ public class Enemy : MonoBehaviour
         {
             print("morreu");
         }
+    }
+
+    public void FollowPlayer()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
 }
