@@ -9,10 +9,9 @@ public class Wave
 {
     public string waveName;
     public int noOfEnemies;
-    public float spawnInterval;
-    public int enemiesLifes;
     public GameObject[] typeOfEnemies;
-    
+    public float spawnInterval;
+
 }
 
 public class WaveSpawner : MonoBehaviour
@@ -20,18 +19,20 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] Wave[] waves;
     public Transform[] spawnPoits;
 
+    [SerializeField]
     private Wave currentWave;
     private int currentWaveNumber;
     // Start is called before the first frame update
     void Start()
     {
-        SpawnWave();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         currentWave = waves[currentWaveNumber];
+        SpawnWave();
     }
 
     void SpawnWave()
