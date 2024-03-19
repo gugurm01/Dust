@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private int vidas;
+    private int vidas;
+    [SerializeField] int maxVidas;
+    [SerializeField] int minVidas;
+    
     [SerializeField] float speed;
     private Transform target;
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
+        vidas = Random.Range(minVidas, maxVidas);
+        print(vidas);
     }
 
     // Update is called once per frame

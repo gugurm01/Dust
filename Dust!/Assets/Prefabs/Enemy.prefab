@@ -124,5 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf2efb2bda43cd498425988533abffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 2
+  maxVidas: 4
+  minVidas: 1
   speed: 1
