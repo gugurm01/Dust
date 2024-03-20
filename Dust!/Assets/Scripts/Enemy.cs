@@ -43,6 +43,8 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    
+
     public void FollowPlayer()
     {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
