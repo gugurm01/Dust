@@ -16,6 +16,7 @@ public class WaveSpawnner : MonoBehaviour
     public Transform[] spawnPoints;
     public Animator animator;
     public Text waveName;
+    public Text waveNum;
 
     private Wave currentWave;
     private int currentWaveNumber;
@@ -28,6 +29,7 @@ public class WaveSpawnner : MonoBehaviour
     private void Update()
     {
         currentWave = waves[currentWaveNumber];
+        waveNum.text = waves[currentWaveNumber].waveName;
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemies");
         if (totalEnemies.Length == 0)
