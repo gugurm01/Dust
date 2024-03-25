@@ -10,6 +10,9 @@ public class Enemy : MonoBehaviour
     
     [SerializeField] float speed;
     private Transform target;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,13 +38,7 @@ public class Enemy : MonoBehaviour
         print(vidas)
 ;    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            print("morreu");
-        }
-    }
+    
 
     
 

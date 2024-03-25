@@ -17,6 +17,8 @@ public class WaveSpawnner : MonoBehaviour
     public Animator animator;
     public Text waveName;
     public Text waveNum;
+    public Text inPauseWave;
+    public Text inGameOverWave;
 
     private Wave currentWave;
     private int currentWaveNumber;
@@ -25,11 +27,17 @@ public class WaveSpawnner : MonoBehaviour
     private bool canSpawn = true;
     private bool canAnimate;
 
+    private void Start()
+    {
+        Time.timeScale = 1.0f;
+    }
 
     private void Update()
     {
         currentWave = waves[currentWaveNumber];
         waveNum.text = waves[currentWaveNumber].waveName;
+        inPauseWave.text = waves[currentWaveNumber].waveName;
+        inGameOverWave.text = waves[currentWaveNumber].waveName;
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemies");
         if (totalEnemies.Length == 0)

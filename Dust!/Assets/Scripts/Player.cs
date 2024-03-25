@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public float speed;
     float horizontal;
     float vertical;
+
+    public GameObject gameOver;
     void Start()
     {
         
@@ -22,7 +24,14 @@ public class Player : MonoBehaviour
         body.velocity = new Vector2(speed * horizontal, speed * vertical);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemies"))
+        {
+            Time.timeScale = 0f;
+            gameOver.SetActive(true);
+        }
+    }
 
 
-    
 }

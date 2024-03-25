@@ -127,3 +127,4 @@ MonoBehaviour:
   maxVidas: 6
   minVidas: 3
   speed: 2
+  gameOver: {fileID: 165393903797692679, guid: f92b97f1ead147042865565e7ede894b, type: 3}
