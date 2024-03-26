@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public GameObject pausePanel, gameUI;
+    public GameObject pausePanel, gameUI, waveName;
 
     public void Play()
     {
@@ -20,8 +20,10 @@ public class Menu : MonoBehaviour
     public void Pausar()
     {
         Time.timeScale = 0f;
+        waveName.SetActive(false);
         gameUI.SetActive(false);
         pausePanel.SetActive(true);
+        
     }
 
     public void BackToGame()
@@ -29,6 +31,7 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1.0f;
         gameUI.SetActive(true);
         pausePanel.SetActive(!true);
+        waveName.SetActive(true);
     }
     // Start is called before the first frame update
     void Start()

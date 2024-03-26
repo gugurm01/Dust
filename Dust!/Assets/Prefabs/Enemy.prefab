@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8316035577082922339}
   - component: {fileID: 8316035577082922348}
   - component: {fileID: 8316035577082922349}
+  - component: {fileID: 1391227541288884984}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemies
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: -468963336, guid: ab8bcd0699870094fb6e64bc1751b432, type: 3}
   m_Color: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,10 +100,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.21133333}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -127,4 +128,24 @@ MonoBehaviour:
   maxVidas: 4
   minVidas: 1
   speed: 1
-  gameOver: {fileID: 165393903797692679, guid: f92b97f1ead147042865565e7ede894b, type: 3}
+  particula: {fileID: 8546278494577566325, guid: 028d61d2d23bb964c85a8bee7ac57b2d, type: 3}
+--- !u!95 &1391227541288884984
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316035577082922350}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 03e151c651319c5479e13cf62b776e92, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

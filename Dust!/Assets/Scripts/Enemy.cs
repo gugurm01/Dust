@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float speed;
     private Transform target;
 
-
+    public ParticleSystem particula;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +28,8 @@ public class Enemy : MonoBehaviour
 
         if(vidas == 0)
         {
+            ParticleSystem explosão = Instantiate(this.particula, this.transform.position, Quaternion.identity);
+            Destroy(explosão.gameObject, 1f);
             Destroy(gameObject);
         }    
     }
