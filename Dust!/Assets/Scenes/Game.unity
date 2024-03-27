@@ -211,7 +211,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -7
   m_Sprite: {fileID: 21300000, guid: b41dadc1b31ced346ae0c7d9a9e1a55e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -230,13 +230,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57645917}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24802, y: -1.75, z: 0}
-  m_LocalScale: {x: 3.0227282, y: 3.0227282, z: 3.0227282}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.92995, y: -3.225, z: 0}
+  m_LocalScale: {x: 7.5568204, y: 7.5568204, z: 7.5568204}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1068812272}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &128572691
 GameObject:
@@ -1007,6 +1007,8 @@ MonoBehaviour:
   pausePanel: {fileID: 1789681888}
   gameUI: {fileID: 1479366835}
   waveName: {fileID: 1524708175}
+  mainMenu: {fileID: 0}
+  credits: {fileID: 0}
 --- !u!1 &545737312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,9 +1693,10 @@ Transform:
   m_LocalPosition: {x: 1.02, y: -0.46, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 57645919}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1068812273
 Rigidbody2D:
@@ -1948,7 +1951,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1191425195
 GameObject:
@@ -1983,7 +1986,7 @@ Transform:
   - {fileID: 761361561}
   - {fileID: 985054512}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1191425198
 Animator:
@@ -2479,9 +2482,9 @@ RectTransform:
   m_Father: {fileID: 985054512}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: 480}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -0.000061035156, y: -60}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1533291766
@@ -3408,7 +3411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1375004569586194420, guid: f92b97f1ead147042865565e7ede894b, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1375004569586194420, guid: f92b97f1ead147042865565e7ede894b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3516,9 +3519,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8532440200431197742, guid: eb7053293774a914aa304376fdca3399, type: 3}
+      propertyPath: scoreGain
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8532440200431197742, guid: eb7053293774a914aa304376fdca3399, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 984377759919956188, guid: eb7053293774a914aa304376fdca3399, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 984377759919956188, guid: eb7053293774a914aa304376fdca3399, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3603,7 +3614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8316035577082922338, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8316035577082922338, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3644,6 +3655,10 @@ PrefabInstance:
     - target: {fileID: 8316035577082922338, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316035577082922349, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
+      propertyPath: scoreText
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8316035577082922350, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
       propertyPath: m_Name

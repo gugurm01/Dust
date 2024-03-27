@@ -129,6 +129,9 @@ MonoBehaviour:
   minVidas: 1
   speed: 1
   particula: {fileID: 8546278494577566325, guid: 028d61d2d23bb964c85a8bee7ac57b2d, type: 3}
+  score: 0
+  scoreGain: 1
+  scoreText: {fileID: 0}
 --- !u!95 &1391227541288884984
 Animator:
   serializedVersion: 5

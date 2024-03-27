@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class Enemy : MonoBehaviour
     private Transform target;
 
     public ParticleSystem particula;
+    public int score;
+    public int scoreGain;
+    public Text scoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +23,7 @@ public class Enemy : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").transform;
         vidas = Random.Range(minVidas, maxVidas);
         print(vidas);
+        
     }
 
     // Update is called once per frame
@@ -28,6 +33,7 @@ public class Enemy : MonoBehaviour
 
         if(vidas == 0)
         {
+           
             ParticleSystem explosão = Instantiate(this.particula, this.transform.position, Quaternion.identity);
             Destroy(explosão.gameObject, 1f);
             Destroy(gameObject);
@@ -36,6 +42,7 @@ public class Enemy : MonoBehaviour
 
     private void OnMouseDown()
     {
+        
         vidas--;
         print(vidas)
 ;    }
