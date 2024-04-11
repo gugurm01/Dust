@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8532440200431197742}
   - component: {fileID: 1338935906809196681}
   m_Layer: 0
-  m_Name: Enemy 2
+  m_Name: Poeira2
   m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

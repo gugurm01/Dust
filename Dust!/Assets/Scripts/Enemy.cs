@@ -10,12 +10,16 @@ public class Enemy : MonoBehaviour
     [SerializeField] int minVidas;
     
     [SerializeField] float speed;
-    private Transform target;
+    public float subir;
+    public Transform target;
 
     public ParticleSystem particula;
     public int score;
     public int scoreGain;
     public Text scoreText;
+
+    float startY;
+    public float height;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +38,7 @@ public class Enemy : MonoBehaviour
         if(vidas == 0)
         {
            
-            ParticleSystem explosão = Instantiate(this.particula, this.transform.position, Quaternion.identity);
+            ParticleSystem explosão = Instantiate(this.particula, new Vector3(transform.position.x, transform.position.y, -1), Quaternion.identity);
             Destroy(explosão.gameObject, 1f);
             Destroy(gameObject);
         }    
@@ -54,5 +58,6 @@ public class Enemy : MonoBehaviour
     public void FollowPlayer()
     {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        
     }
 }

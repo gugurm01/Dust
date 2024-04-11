@@ -19,9 +19,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        /*horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
         body.velocity = new Vector2(speed * horizontal, speed * vertical);
+        */
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

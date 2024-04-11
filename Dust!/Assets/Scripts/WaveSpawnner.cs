@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 public class Wave
@@ -26,6 +27,7 @@ public class WaveSpawnner : MonoBehaviour
 
     private bool canSpawn = true;
     private bool canAnimate;
+
 
     private void Start()
     {
@@ -74,7 +76,7 @@ public class WaveSpawnner : MonoBehaviour
         if (canSpawn && nextSpawnTime < Time.time)
         {
             GameObject randomEnemy = currentWave.typeOfEnemies[Random.Range(0, currentWave.typeOfEnemies.Length)];
-            Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+            Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];;
             Instantiate(randomEnemy, randomPoint.position, Quaternion.identity);
             currentWave.noOfEnemies--;
             nextSpawnTime = Time.time + currentWave.spawnInterval;
