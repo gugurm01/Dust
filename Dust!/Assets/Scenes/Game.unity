@@ -2022,22 +2022,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - waveName: Wave 1
-    noOfEnemies: 1000
+    noOfEnemies: 8
     typeOfEnemies:
     - {fileID: 8316035577082922350, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
-    - {fileID: 2049434541830063298, guid: 8ecdd03ee53fb3045af653b691ef2c0c, type: 3}
-    spawnInterval: 2
+    - {fileID: 4338863915930173534, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+    spawnInterval: 3
   - waveName: Wave 2
     noOfEnemies: 6
     typeOfEnemies:
     - {fileID: 8316035577082922350, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
-    spawnInterval: 2.8
+    spawnInterval: 2.5
   - waveName: Wave 3
     noOfEnemies: 10
     typeOfEnemies:
     - {fileID: 8316035577082922350, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
     - {fileID: 7119321902643842563, guid: eb7053293774a914aa304376fdca3399, type: 3}
-    spawnInterval: 2.6
+    spawnInterval: 2.4
   - waveName: Wave 4
     noOfEnemies: 12
     typeOfEnemies:
@@ -2049,21 +2049,21 @@ MonoBehaviour:
     typeOfEnemies:
     - {fileID: 8316035577082922350, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
     - {fileID: 7119321902643842563, guid: eb7053293774a914aa304376fdca3399, type: 3}
-    - {fileID: 2049434541830063298, guid: 8ecdd03ee53fb3045af653b691ef2c0c, type: 3}
-    spawnInterval: 2
+    - {fileID: 4338863915930173534, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+    spawnInterval: 1.9
   - waveName: Wave 6
     noOfEnemies: 20
     typeOfEnemies:
     - {fileID: 8316035577082922350, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
     - {fileID: 7119321902643842563, guid: eb7053293774a914aa304376fdca3399, type: 3}
-    - {fileID: 2049434541830063298, guid: 8ecdd03ee53fb3045af653b691ef2c0c, type: 3}
+    - {fileID: 4338863915930173534, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
     spawnInterval: 1.5
   - waveName: Wave 7
     noOfEnemies: 25
     typeOfEnemies:
     - {fileID: 8316035577082922350, guid: e04cba4e03577fa4692debe2fcc80f4e, type: 3}
     - {fileID: 7119321902643842563, guid: eb7053293774a914aa304376fdca3399, type: 3}
-    - {fileID: 2049434541830063298, guid: 8ecdd03ee53fb3045af653b691ef2c0c, type: 3}
+    - {fileID: 4338863915930173534, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
     spawnInterval: 1.5
   spawnPoints:
   - {fileID: 1259466782}
@@ -3719,3 +3719,132 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1375004569586194420, guid: f92b97f1ead147042865565e7ede894b, type: 3}
   m_PrefabInstance: {fileID: 1002683186014307382}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4338863915396502700
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4338863915506137920, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915506137920, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915506137924, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915506137926, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1068812272}
+    - target: {fileID: 4338863915651364817, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1068812272}
+    - target: {fileID: 4338863915651364819, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915651364819, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915651364823, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1391861
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173528, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173534, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_Name
+      value: Formigas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173534, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863915930173535, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1068812272}
+    - target: {fileID: 4338863916028909705, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863916028909705, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863916028909709, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863916028909711, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1068812272}
+    - target: {fileID: 4338863916695054732, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863916695054732, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863916695054768, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338863916695054770, guid: 451abfbf2afc2f046accd45521e80923, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1068812272}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 451abfbf2afc2f046accd45521e80923, type: 3}

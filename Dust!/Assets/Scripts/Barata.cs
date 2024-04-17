@@ -7,6 +7,7 @@ public class Barata : MonoBehaviour
     public float speed = 2f;
     public float height = 0.05f;
     float startY;
+    public SpriteRenderer sprites;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,4 +22,8 @@ public class Barata : MonoBehaviour
         var newY = startY + height * Mathf.Sin(Time.time * speed); 
         transform.position = new Vector2(pos.x, newY);
     }
+
+    
 }
+
+
