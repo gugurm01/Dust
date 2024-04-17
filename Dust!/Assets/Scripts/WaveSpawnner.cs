@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class Wave
@@ -56,7 +57,7 @@ public class WaveSpawnner : MonoBehaviour
             }
             else
             {
-                Debug.Log("GameFinish");
+                SceneManager.LoadScene("Menu");
             }
 
 
