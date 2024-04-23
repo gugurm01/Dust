@@ -36,21 +36,26 @@ public class Enemy : MonoBehaviour
     {
         FollowPlayer();
         Flip();
-        if(vidas == 0)
-        {
-           
-            ParticleSystem explosão = Instantiate(this.particula, new Vector3(transform.position.x, transform.position.y, -1), Quaternion.identity);
-            Destroy(explosão.gameObject, 1f);
-            Destroy(gameObject);
-        }    
+        
     }
 
     private void OnMouseDown()
     {
-        vidas--;
+        TomarDano(Player.dano);
         print(vidas)
 ;   }
 
+    public void TomarDano(int dano)
+    {
+        vidas -= dano;
+        if (vidas == 0)
+        {
+
+            ParticleSystem explosão = Instantiate(this.particula, new Vector3(transform.position.x, transform.position.y, -1), Quaternion.identity);
+            Destroy(explosão.gameObject, 1f);
+            Destroy(gameObject);
+        }
+    }
     
     public void Flip()
     {

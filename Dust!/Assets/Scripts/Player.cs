@@ -9,11 +9,12 @@ public class Player : MonoBehaviour
     public float speed;
     float horizontal;
     float vertical;
-
+    public static int dano;
     public GameObject gameOver;
+
     void Start()
     {
-        
+        dano = 1;
     }
 
 
@@ -23,8 +24,18 @@ public class Player : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical");
         body.velocity = new Vector2(speed * horizontal, speed * vertical);
         */
+
+        
+    }
+    public void Voltar()
+    {
+        dano = 1;
     }
 
+    public void IDK()
+    {
+        dano *= 2;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemies"))
