@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
     public void TomarDano(int dano)
     {
         vidas -= dano;
-        if (vidas == 0)
+        if (vidas <= 0)
         {
 
             ParticleSystem explosão = Instantiate(this.particula, new Vector3(transform.position.x, transform.position.y, -1), Quaternion.identity);
