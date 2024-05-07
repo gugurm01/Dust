@@ -5,13 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public GameObject pausePanel, gameUI, waveName, mainMenu, credits;
+    public GameObject pausePanel, gameUI, waveName, mainMenu, credits, panel1, panel2, panel3, panel4;
 
     public void Play()
     {
         SceneManager.LoadScene("Game");
     }
 
+    public void P1toP2()
+    {
+        panel2.SetActive(true);
+        panel1.SetActive(false);
+    }
+
+    public void P2toP3()
+    {
+        panel3.SetActive(true);
+        panel2.SetActive(false);
+    }
+
+    public void P3toP4()
+    {
+        panel4.SetActive(true);
+        panel3.SetActive(false);
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
     public void QuitGame()
     {
         Application.Quit();

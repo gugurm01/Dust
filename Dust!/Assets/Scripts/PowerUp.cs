@@ -7,7 +7,6 @@ public class PowerUp : MonoBehaviour
 {
     public Button button;
     public Text texto;
-    public float daninho;
 
     private void Start()
     {
